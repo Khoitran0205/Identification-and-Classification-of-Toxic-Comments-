@@ -35,7 +35,7 @@ class TextVectorizer:
         
     def process(self, text_token):
         self.text_token = text_token
-        self.dict_good_words = pk.load(open('D:/Identification-and-Classification-of-Toxic-Comments-/code/dict_positive_words.pkl', 'rb'))
-        self.dict_bad_words = pk.load(open('D:/Identification-and-Classification-of-Toxic-Comments-/code/dict_bad_words.pkl', 'rb'))
+        self.dict_good_words = pk.load(open('C:/Workspace/School/Seminar_CNPM/Identification-and-Classification-of-Toxic-Comments-/code/dict_positive_words.pkl', 'rb'))
+        self.dict_bad_words = pk.load(open('C:/Workspace/School/Seminar_CNPM/Identification-and-Classification-of-Toxic-Comments-/code/dict_bad_words.pkl', 'rb'))
         return self.count_vectorizer()
 
